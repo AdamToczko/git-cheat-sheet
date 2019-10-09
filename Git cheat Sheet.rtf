@@ -1,108 +1,57 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
-{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue255;}
-{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c1680\c19835\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11660\viewh8920\viewkind0
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+mkdir git-course-0
+ls -a - ukryte
+clear
+nano new.txt - tworzy plik
+pwd - pokazuje sciezke
+ls - al pokazuje liste
+git clone url
+touch nazwa-pliku - tworzy plik 
 
-\f0\fs24 \cf2 \CocoaLigature0 mkdir git-course-0\
-ls -a - ukryte\
-clear\
-nano new.txt - tworzy plik\
-\cf3 pwd - 
-\f1\b pokazuje sciezke
-\f0\b0 \
-ls - 
-\f1\b al pokazuje liste\
+cat nazwa pliku txt - wyswietli zawartosc pliku 
+cd .. folder up
 
-\f0\b0 git clone url
-\f1\b \
+nano nazwa pliku 
+nano .gitkeep- tworzenie pustego pliku zeby zapisac pusty katalog
+git add . (Wszystkie /albo nazwa pliku)
+git commit -m”bla bla ”
+git push origin master
 
-\f0\b0 touch nazwa-pliku -
-\f1\b  tworzy plik 
-\f0\b0 \cf2 \
-\
-\cf3 cat nazwa pliku txt - 
-\f1\b wyswietli zawartosc pliku 
-\f0\b0 \cf2 \
-cd .. folder up\
-\
-nano nazwa pliku \
-nano .gitkeep- 
-\f1\b tworzenie pustego pliku zeby zapisac pusty katalog
-\f0\b0 \
-git add . 
-\f1\b (Wszystkie /albo nazwa pliku)
-\f0\b0 \
-git commit -m\'94bla bla \'94\
-git push origin master\
-\
-rmdir nazwa\
-\
-git diff 
-\f1\b sprawdza roznice miedzy working directory a gitem
-\f0\b0 \
-git diff --staged 
-\f1\b miedzy staged 
-\f0\b0 \
-\
-git log - 
-\f1\b wszystkie zmiany
-\f0\b0 \
-git log -2 
-\f1\b dwie ostatnie
-\f0\b0 \
-git log \'97-grep=\'93
-\f1\b nazwa pliku bez rozszerzenia
-\f0\b0 \'94\
-git log \'97graph 
-\f1\b graficznie
-\f0\b0 \
-\
-git log --oneline\
-\
-git checkout 
-\f1\b suma kontrolna
-\f0\b0 \
-\
-git checkout master - 
-\f1\b powrot do glownego/oryginalu\
-\
+rmdir nazwa
 
-\f0\b0 \cf3 git reset nazwa pliku 
-\f1\b - cofa ze staging area\
-\
-git reset \'97-soft HEAD~1 - cofa o jeden Head ale zachowuje zmiany\cf2 \
-\
+git diff sprawdza roznice miedzy working directory a gitem
+git diff --staged miedzy staged 
 
-\f0\b0 git reset suma kontrolna miejsca \'97-soft - 
-\f1\b cofa do stagingu w tym miejscu\
-\
+git log - wszystkie zmiany
+git log -2 dwie ostatnie
+git log —-grep=“nazwa pliku bez rozszerzenia”
+git log —graph graficznie
 
-\f0\b0 git reset suma kontrolna miejsca \'97-mixed - 
-\f1\b cofa do working dir w tym miejscu\
-\
-hard - totalnie\
-\
+git log --oneline
 
-\f0\b0 \cf3 git checkout -b nazwa brancha 
-\f1\b - tworzy nowy branch\
-\
-git branch \
-\
+git checkout suma kontrolna
 
-\f0\b0 git branch -a
-\f1\b  wyswietla lokalne i zdalne branche  \cf2 \
-\
+git checkout master - powrot do glownego/oryginalu
 
-\f0\b0 git branch nazwa - tworzenie rozgalezienia\
-\
-git checkout nazwa branchy - przenosimy prace na ten branch \
-\
-\cf3 git push - 
-\f1\b wypycha tylko ta branch na ktorej jestesmy
-\f0\b0 \cf2 \
-\
+git reset nazwa pliku - cofa ze staging area
+
+git reset —-soft HEAD~1 - cofa o jeden Head ale zachowuje zmiany
+
+git reset suma kontrolna miejsca —-soft - cofa do stagingu w tym miejscu
+
+git reset suma kontrolna miejsca —-mixed - cofa do working dir w tym miejscu
+
+hard - totalnie
+
+git checkout -b nazwa brancha - tworzy nowy branch
+
+git branch 
+
+git branch -a wyswietla lokalne i zdalne branche  
+
+git branch nazwa - tworzenie rozgalezienia
+
+git checkout nazwa branchy - przenosimy prace na ten branch 
+
+git push - wypycha tylko ta branch na ktorej jestesmy
+
 git pull - pobiera ze zdalnego 
-\f1\b \
-}
