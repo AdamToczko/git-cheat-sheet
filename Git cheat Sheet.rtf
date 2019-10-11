@@ -34,7 +34,7 @@ git checkout master - powrot do glownego/oryginalu
 
 git reset nazwa pliku - cofa ze staging area
 
-git reset —-soft HEAD~1 - cofa o jeden Head ale zachowuje zmiany
+git reset —-soft HEAD~1 - cofa o jeden Head ale zachowuje zmiany /--mixed   /--hard kasuje pliki o tyle ile sie cofasz
 
 git reset suma kontrolna miejsca —-soft - cofa do stagingu w tym miejscu
 
@@ -55,3 +55,21 @@ git checkout nazwa branchy - przenosimy prace na ten branch
 git push -u origin NAZWA BRANCHY wypycha tylko ta branch na ktorej jestesmy
 
 git pull - pobiera ze zdalnego 
+
+-----updated----
+git fetch - synchronizuje liste branchy, pokazuje branche innych osob 
+
+git branch -d nazwa branchy - kasuje branch / trzeba byc na masterze
+
+-----merge--------
+
+fast forward - master przechodzi na ten branch ktory jest mergowany
+
+no fas forwards git merge --no-ff Tworzony jest dodatkowy commit, 
+wszystkie zmiany z brnacha na mastera/ w historii widac commity branchy
+
+git merge - domyslnie moze zrobic jedna albo druga opcje - zalezy jaka jest sytuacja na masterze, ale najpierw probuje fast forward
+
+
+
+
