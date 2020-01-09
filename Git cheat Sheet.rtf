@@ -21,6 +21,14 @@ rmdir nazwa
 git diff sprawdza roznice miedzy working directory a gitem
 git diff --staged miedzy staged 
 
+# show differences between index and working tree
+# that is, changes you haven't staged to commit
+git diff [filename]
+git diff --staged 
+
+# show differences between current commit and working tree
+git diff HEAD [filename]
+
 git log - wszystkie zmiany
 git log -2 dwie ostatnie
 git log —-grep=“nazwa pliku bez rozszerzenia”
